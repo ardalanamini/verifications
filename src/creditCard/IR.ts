@@ -146,39 +146,38 @@ const types: Types = {
  * @see http://www.aliarash.com/article/creditcart/credit-debit-cart.htm
  */
 export function verify(code: string) {
-  const indexes: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-
-  // just in case
-  code = code.replace(/\D/g, '')
+  code = code.replace(/\D/g, '') // just in case
 
   if (code.length !== 16) return false
 
-  let digits: number[] = code.split('') // spliting digits
+  const digits: number[] = code.split('') // spliting digits
     .map((digit: string) => +digit) // parsing digits into number type
 
-  const onesDigit: number = digits[0]
-
-  indexes.map((index: number) => {
-    if (index % 2 === 1) {
-      digits[index - 1] *= 2
-      if (digits[index - 1] > 9) digits[index - 1] -= 9
-    }
-  })
+  // const onesDigit: number = digits[0]
 
   let sum: number = 0
-  digits.map((digit: number) => sum += digit)
+
+  digits.map((digit: number, index: number) => {
+    if (index % 2 === 0) {
+      digit *= 2
+
+      if (digit > 9) digit -= 9
+    }
+
+    sum += digit
+  })
 
   return sum % 10 === 0
 }
 
 export function identify(code: string) {
-  code = code.replace(/\D/g, '')
+  code = code.replace(/\D/g, '') // just in case
 
   let valid = verify(code)
 
   return {
     valid,
     type: valid ? types[code[0]] : undefined,
-    bank: valid ? banks[code.slice(1, 5)] : undefined
+    bank: valid ? banks[code.slice(1, 6)] : undefined
   }
 }
