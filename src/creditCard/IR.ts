@@ -148,11 +148,13 @@ const types: Types = {
 export function verify(code: string) {
   const indexes: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
-  let digits: number[] = code.replace(/\D/g, '') // just in case
-    .split('') // spliting digits
-    .map((digit: string) => +digit) // parsing digits into number type
+  // just in case
+  code = code.replace(/\D/g, '')
 
-  if (digits.length !== 16) return false
+  if (code.length !== 16) return false
+
+  let digits: number[] = code.split('') // spliting digits
+    .map((digit: string) => +digit) // parsing digits into number type
 
   const onesDigit: number = digits[0]
 

@@ -1,12 +1,14 @@
 export function verify(code: string) {
   const indexes: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  let digits: number[] = code.replace(/\D/g, '') // just in case
-    .split('') // spliting digits
+  // just in case
+  code = code.replace(/\D/g, '')
+
+  if (code.length !== 10) return false
+
+  let digits: number[] = code.split('') // spliting digits
     .map((digit: string) => +digit) // parsing digits into number type
     .reverse() // and finally reversing the array
-
-  if (digits.length !== 10) return false
 
   const onesDigit: number = digits[0]
 

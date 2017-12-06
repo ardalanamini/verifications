@@ -1,15 +1,32 @@
 {
   "name": "verifications",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "universal validation library for developers",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "verification",
+    "identification",
+    "national code",
+    "credit card"
+  ],
   "author": "Ardalan Amini <ardalan1074@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardalanamini/verifications.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ardalanamini/verifications/issues"
+  },
   "devDependencies": {
     "typescript": "^2.6.2"
   }
