@@ -1,0 +1,15 @@
+{
+  "name": "verifications",
+  "version": "0.1.0",
+  "description": "universal validation library",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ardalan Amini <ardalan1074@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
