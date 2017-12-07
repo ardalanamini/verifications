@@ -1,14 +1,16 @@
-export interface Bank {
+import * as types from './types.json'
+
+export interface Provider {
   name: string
   alias: string
   website: string
 }
 
-interface Banks {
-  [key: string]: Bank
+interface Providers {
+  [key: string]: Provider
 }
 
-const banks: Banks = {
+const providers: Providers = {
   '02229': {
     name: 'Bank Pasargad',
     alias: 'BPI',
@@ -131,15 +133,15 @@ const banks: Banks = {
   },
 }
 
-interface Types {
-  [key: string]: string
-}
-
-const types: Types = {
-  '3': 'travel', // travel & entertainment
-  '5': 'bank', // bank or financial institution
-  '6': 'bank' // bank or financial institution
-}
+// interface Types {
+//   [key: string]: string
+// }
+//
+// const types: Types = {
+//   '3': 'travel', // travel & entertainment
+//   '5': 'bank', // bank or financial institution
+//   '6': 'bank' // bank or financial institution
+// }
 
 /**
  *
@@ -178,6 +180,6 @@ export function identify(code: string) {
   return {
     valid,
     type: valid ? types[code[0]] : undefined,
-    bank: valid ? banks[code.slice(1, 6)] : undefined
+    provider: valid ? providers[code.slice(1, 6)] : undefined
   }
 }

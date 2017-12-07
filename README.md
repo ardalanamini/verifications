@@ -26,6 +26,8 @@ isCreditCardValid = new Verifications()
                           .verify('xxxx-xxxx-xxxx-xxxx');
 ```
 
+* for client side usage you're going to need json-loader or something...
+
 ### Available Locales
 
 - IR (default)
