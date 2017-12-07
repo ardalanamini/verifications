@@ -1,5 +1,5 @@
-import nationalCode from './nationalCode'
-import creditCard from './creditCard'
+import nationalId from './nationalId'
+import CreditCard from './CreditCard'
 
 export default class Verifications {
   private locale: string
@@ -14,11 +14,9 @@ export default class Verifications {
     return this
   }
 
-  get nationalCode(): Object {
-    return nationalCode[this.locale]
+  get nationalId(): Object {
+    return nationalId[this.locale]
   }
 
-  get creditCard(): Object {
-    return creditCard[this.locale]
-  }
+  static CreditCard = CreditCard
 }

@@ -1,10 +1,12 @@
 {
   "name": "verifications",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "universal validation library for developers",
   "main": "dist/index.js",
   "scripts": {
+    "prepublish": "npm run build && npm run files",
     "build": "tsc",
+    "files": "copyfiles -u 1 ./src/**/*.json ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -18,7 +20,7 @@
     "national code",
     "credit card"
   ],
-  "author": "Ardalan Amini <ardalan1074@gmail.com>",
+  "author": "Ardalan Amini <ardalanamini22@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",

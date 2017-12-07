@@ -16,26 +16,46 @@ universal validation library for developers
 ```javascript
 const Verifications = require('verifications');
 
-var isCreditCardValid = new Verifications('IR')
-                              .creditCard
-                              .verify('xxxx-xxxx-xxxx-xxxx');
+var isNationalIdValid = new Verifications()
+                                .nationalId
+                                .verify('xxx-xxxxxx-x');
+
+isNationalIdValid = new Verifications('US')
+                                .nationalId
+                                .verify('xxx-xx-xxxx');
 // or
-isCreditCardValid = new Verifications()
-                          .setLocale('IR')
-                          .creditCard
+isNationalIdValid = new Verifications()
+                            .setLocale('US')
+                            .nationalId
+                            .verify('xxx-xx-xxxx');
+
+var isCreditCardValid = Verifications
+                          .CreditCard
                           .verify('xxxx-xxxx-xxxx-xxxx');
 ```
 
 * for client side usage you're going to need json-loader or something...
 
-### Available Locales
+##### Available Methods
 
-- IR (default)
-
-### Available Methods
-
-- nationalCode
+- nationalId - (needs locale)
   - verify(code: string): boolean
-- creditCard
+- CreditCard - (static method)
   - verify(code: string): boolean
-  - identify(code: string): { valid: voolean, type?: string, bank?: { name: string, alias: string, website: string } }
+  - type(code: string): string | undefined
+  - issuer(code: string): { name: string, alias: string, website: string } | undefined
+  - identify(code: string): { type: Type, issuer: Issuer } | undefined
+
+### nationalId
+
+**Supported countries:**
+
+- Iran (IR) - کد ملی
+- United States (US) - Social Security Number
+
+### CreditCard
+
+**Luhn verification algorithm (almost all credit cards around the globe)**
+
+- 9 card/issuer types
+- 46 active issuers are supported

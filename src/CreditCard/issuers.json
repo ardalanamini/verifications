@@ -1,0 +1,522 @@
+[
+  {
+    "identifiers": [
+      "610433"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Mellat",
+    "alias": "Bank Mellat",
+    "website": "https://www.bankmellat.ir"
+  },
+  {
+    "identifiers": [
+      "621986"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Saman Bank",
+    "alias": "SB",
+    "website": "https://www.sb24.com"
+  },
+  {
+    "identifiers": [
+      "622106"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Parsian Bank",
+    "alias": "Parsian Bank",
+    "website": "http://www.persian-bank.ir"
+  },
+  {
+    "identifiers": [
+      "627353"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Tejarat Bank",
+    "alias": "Tejarat Bank",
+    "website": "https://www.tejaratbank.ir"
+  },
+  {
+    "identifiers": [
+      "627381"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Ansar Bank",
+    "alias": "Ansar Bank",
+    "website": "https://www.ansarbank.com"
+  },
+  {
+    "identifiers": [
+      "627412"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Eghtesad Novin Bank",
+    "alias": "EN Bank",
+    "website": "https://www.enbank.ir"
+  },
+  {
+    "identifiers": [
+      "627488"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Karafarin Bank",
+    "alias": "Karafarin Bank",
+    "website": "http://www.karafarinbank.ir"
+  },
+  {
+    "identifiers": [
+      "627648"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Export Development Bank of Iran",
+    "alias": "EDBI",
+    "website": "https://www.edbi.ir"
+  },
+  {
+    "identifiers": [
+      "627760"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Post Bank of Iran",
+    "alias": "Post Bank of Iran",
+    "website": "http://www.postbank.ir"
+  },
+  {
+    "identifiers": [
+      "627961"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank of Industry and Mine",
+    "alias": "BIM",
+    "website": "http://www.bim.ir"
+  },
+  {
+    "identifiers": [
+      "628023"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Maskan",
+    "alias": "Bank Maskan",
+    "website": "http://bank-maskan.ir"
+  },
+  {
+    "identifiers": [
+      "636214"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Ayandeh Bank",
+    "alias": "BA",
+    "website": "https://www.ba24.ir"
+  },
+  {
+    "identifiers": [
+      "639346"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Sina Bank",
+    "alias": "Sina Bank",
+    "website": "https://www.sinabank.ir"
+  },
+  {
+    "identifiers": [
+      "639370"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Mehr Eqtesad Bank",
+    "alias": "ME Bank",
+    "website": "https://www.mebank.ir"
+  },
+  {
+    "identifiers": [
+      "639607"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Sarmayeh Bank",
+    "alias": "Sarmayeh Bank",
+    "website": "https://www.sbank.ir"
+  },
+  {
+    "identifiers": [
+      "589210"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Sepah",
+    "alias": "Bank Sepah",
+    "website": "https://www.ebanksepah.ir"
+  },
+  {
+    "identifiers": [
+      "589463"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Refah Bank",
+    "alias": "Refah Bank",
+    "website": "http://refah-bank.ir"
+  },
+  {
+    "identifiers": [
+      "34",
+      "37"
+    ],
+    "lengths": [
+      "15"
+    ],
+    "name": "American Express",
+    "alias": "Amex",
+    "website": "https://www.americanexpress.com"
+  },
+  {
+    "identifiers": [
+      "502229"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Pasargad",
+    "alias": "BPI",
+    "website": "https://www.bpi.ir"
+  },
+  {
+    "identifiers": [
+      "502806"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Shahr Bank",
+    "alias": "Shahr Bank",
+    "website": "http://shahr-bank.ir"
+  },
+  {
+    "identifiers": [
+      "502908"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Tose'e Ta'avon Bank",
+    "alias": "Tose'e Ta'avon Bank",
+    "website": "http://www.ttbank.ir"
+  },
+  {
+    "identifiers": [
+      "502938"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Day",
+    "alias": "Bank Day",
+    "website": "http://www.bank-day.ir/"
+  },
+  {
+    "identifiers": [
+      "603769"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Saderat Iran",
+    "alias": "BSI",
+    "website": "http://www.bsi.ir/"
+  },
+  {
+    "identifiers": [
+      "603770"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Keshavarzi Bank",
+    "alias": "BKI",
+    "website": "http://www.bki.ir"
+  },
+  {
+    "identifiers": [
+      "603799"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank Melli Iran",
+    "alias": "BMI",
+    "website": "https://bmi.ir"
+  },
+  {
+    "identifiers": [
+      "62"
+    ],
+    "lengths": [
+      "16~19"
+    ],
+    "name": "China UnionPay",
+    "alias": "CUP",
+    "website": "http://www.unionpayintl.com"
+  },
+  {
+    "identifiers": [
+      "36"
+    ],
+    "lengths": [
+      "14~19"
+    ],
+    "name": "Diners Club International",
+    "alias": "DCI",
+    "website": "http://www.dinersclub.com"
+  },
+  {
+    "identifiers": [
+      "38~39",
+      "300~305",
+      "3095"
+    ],
+    "lengths": [
+      "16~19"
+    ],
+    "name": "Diners Club International",
+    "alias": "DCI",
+    "website": "http://www.dinersclub.com"
+  },
+  {
+    "identifiers": [
+      "54~55"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Diners Club International (United States & Canada)",
+    "alias": "DCI",
+    "website": "http://www.dinersclub.com"
+  },
+  {
+    "identifiers": [
+      "64~65",
+      "6011"
+    ],
+    "lengths": [
+      "16~19"
+    ],
+    "name": "Discover Card",
+    "alias": null,
+    "website": "http://discover.com"
+  },
+  {
+    "identifiers": [
+      "636"
+    ],
+    "lengths": [
+      "16~19"
+    ],
+    "name": "Decoupled debit card",
+    "alias": null,
+    "website": null
+  },
+  {
+    "identifiers": [
+      "3528~3589"
+    ],
+    "lengths": [
+      "16~19"
+    ],
+    "name": "Japan Credit Bureau",
+    "alias": "JCB",
+    "website": "http://www.global.jcb"
+  },
+  {
+    "identifiers": [
+      "50",
+      "56~58",
+      "6"
+    ],
+    "lengths": [
+      "12~19"
+    ],
+    "name": "Maestro",
+    "alias": null,
+    "website": "http://www.maestrocard.com"
+  },
+  {
+    "identifiers": [
+      "5019",
+      "4175",
+      "4571",
+      "4"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Dankort",
+    "alias": null,
+    "website": null
+  },
+  {
+    "identifiers": [
+      "2200~2204"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Mir (payment system)",
+    "alias": "Mir",
+    "website": "http://mironline.ru"
+  },
+  {
+    "identifiers": [
+      "2221~2720",
+      "51~55"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "MasterCard",
+    "alias": null,
+    "website": "https://mastercard.com"
+  },
+  {
+    "identifiers": [
+      "4"
+    ],
+    "lengths": [
+      "13",
+      "16",
+      "19"
+    ],
+    "name": "Visa Inc",
+    "alias": "Visa",
+    "website": "http://visa.com"
+  },
+  {
+    "identifiers": [
+      "1"
+    ],
+    "lengths": [
+      "15"
+    ],
+    "name": "Universal Air Travel Plan",
+    "alias": "UATP",
+    "website": "http://www.uatp.com"
+  },
+  {
+    "identifiers": [
+      "506099~506198",
+      "650002~650027"
+    ],
+    "lengths": [
+      "16",
+      "19"
+    ],
+    "name": "Interswitch",
+    "alias": "Verve",
+    "website": "http://www.interswitchgroup.com"
+  },
+  {
+    "identifiers": [
+      "979200~979289"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "TROY",
+    "alias": null,
+    "website": null
+  },
+  {
+    "identifiers": [
+      "5392"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "CARDGUARD EAD BG ILS",
+    "alias": null,
+    "website": null
+  },
+  {
+    "identifiers": [
+      "45"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Royal Bank of Canada",
+    "alias": "RBC",
+    "website": "http://rbc.com"
+  },
+  {
+    "identifiers": [
+      "4724"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "TD Canada Trust",
+    "alias": "TD",
+    "website": "http://www.tdcanadatrust.com"
+  },
+  {
+    "identifiers": [
+      "4536"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "The Bank of Nova Scotia",
+    "alias": "Scotiabank",
+    "website": "http://scotiabank.com"
+  },
+  {
+    "identifiers": [
+      "500"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Bank of Montreal",
+    "alias": "BMO",
+    "website": "http://bmo.com"
+  },
+  {
+    "identifiers": [
+      "56"
+    ],
+    "lengths": [
+      "16"
+    ],
+    "name": "Hongkong Bank of Canada",
+    "alias": "HSBC",
+    "website": "http://www.hsbc.ca"
+  }
+]
