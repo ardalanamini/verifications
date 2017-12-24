@@ -1,22 +1,7 @@
-import nationalId from './nationalId'
+import NationalID from './NationalID'
 import CreditCard from './CreditCard'
 
 export default class Verifications {
-  private locale: string
-
-  constructor(locale: string = 'IR') {
-    this.locale = locale.toUpperCase()
-  }
-
-  setLocale(locale: string) {
-    this.locale = locale.toUpperCase()
-
-    return this
-  }
-
-  get nationalId(): Object {
-    return nationalId[this.locale]
-  }
-
+  static NationalID = NationalID
   static CreditCard = CreditCard
 }
