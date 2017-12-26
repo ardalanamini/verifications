@@ -22,35 +22,18 @@
 // SOFTWARE.
 //
 
-import * as IR from './IR'
-import * as UK from './UK'
-import * as US from './US'
+// National Insurance Number - NI Number (NINO)
 
-const locales: { [key: string]: any } = {
-  IR,
-  UK,
-  US
-}
+export function verify(code: string) {
+  code = code.replace(/_|\W/g, '') // just in case
 
-// @see https://en.wikipedia.org/wiki/National_identification_number
-export default class NationalId {
-  static get locales() {
-    return Object.keys(locales)
-  }
+  if (code.length !== 9) return false
 
-  static verify(code: string, locale?: string) {
-    if (locale) {
-      if (NationalId.locales.indexOf(locale) === -1) throw new Error('used locale is not supported')
+  code = code.toUpperCase()
 
-      locale = locale.toUpperCase()
+  if (!/^[ABCEGHJKLMNOPRSTWXYZ]{1}[ABCEGHJKLMNPRSTWXYZ]{1}\d{6}[A-D]{1}$/.test(code)) return false
 
-      return locales[locale].verify(code)
-    }
+  if (/^(BG|GB|NK|KN|TN|NT|ZZ)/.test(code)) return false
 
-    for (let l in locales) {
-      if (locales[l].verify()) return true
-    }
-
-    return false
-  }
+  return true
 }

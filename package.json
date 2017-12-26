@@ -1,10 +1,10 @@
 {
   "name": "verifications",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "universal verification library for developers",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "./scripts/prepare.js",
+    "prepare": "node ./scripts/prepare.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

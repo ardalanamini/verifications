@@ -1,0 +1,66 @@
+[
+  {
+    "provider": "Shatel mobile",
+    "identifiers": [
+      "9981"
+    ]
+  },
+  {
+    "provider": "UpTell",
+    "identifiers": [
+      "9991"
+    ]
+  },
+  {
+    "provider": "SamanTel",
+    "identifiers": [
+      "99998~99999"
+    ]
+  },
+  {
+    "provider": "RighTel",
+    "identifiers": [
+      "920~922"
+    ]
+  },
+  {
+    "provider": "MTN Irancell",
+    "identifiers": [
+      "901~903",
+      "935~939",
+      "9301364307",
+      "933"
+    ]
+  },
+  {
+    "provider": "MTCE",
+    "identifiers": [
+      "931"
+    ]
+  },
+  {
+    "provider": "Taliya",
+    "identifiers": [
+      "932"
+    ]
+  },
+  {
+    "provider": "MCE",
+    "identifiers": [
+      "91",
+      "990"
+    ]
+  },
+  {
+    "provider": "TeleKish",
+    "identifiers": [
+      "9"
+    ]
+  },
+  {
+    "provider": "PH.Lotus",
+    "identifiers": [
+      "9990"
+    ]
+  }
+]

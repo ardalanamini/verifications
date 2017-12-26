@@ -23,34 +23,60 @@
 //
 
 import * as IR from './IR'
-import * as UK from './UK'
-import * as US from './US'
+import * as countries from './countries.json'
 
 const locales: { [key: string]: any } = {
-  IR,
-  UK,
-  US
+  IR
 }
 
-// @see https://en.wikipedia.org/wiki/National_identification_number
-export default class NationalId {
-  static get locales() {
-    return Object.keys(locales)
+const getCountry = (number: string) => {
+  for (let code of Object.keys(countries).sort((a, b) => +b - +a)) {
+    if ((new RegExp(`^${code}`)).test(number)) return countries[code]
   }
 
-  static verify(code: string, locale?: string) {
-    if (locale) {
-      if (NationalId.locales.indexOf(locale) === -1) throw new Error('used locale is not supported')
+  return undefined
+}
 
-      locale = locale.toUpperCase()
+export default class Phone {
+  static identify(number: string) {
+    number = Phone.normalize(number)
 
-      return locales[locale].verify(code)
+    let country = getCountry(number)
+
+    if (country) {
+      let locale = locales[country.alias]
+
+      if (locale) {
+        let identity = locale.identify(number)
+
+        if (identity) return { ...identity, country }
+      }
     }
 
-    for (let l in locales) {
-      if (locales[l].verify()) return true
-    }
+    return undefined
+  }
 
-    return false
+  static fancy(number: string) {
+    number = Phone.normalize(number)
+
+    let country = getCountry(number)
+
+    if (country && locales[country.alias]) return `+${number.substr(0, 2)} ${locales[country.alias].fancy(number)}`
+
+    return number
+  }
+
+  static country(number: string) {
+    number = Phone.normalize(number)
+
+    return getCountry(number)
+  }
+
+  static normalize(number: string) {
+    number = number.replace(/\D/g, '')
+
+    if (/^0{2}/.test(number)) number = number.slice(2)
+
+    return number
   }
 }
