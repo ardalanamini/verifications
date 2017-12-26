@@ -18,7 +18,7 @@ A **TypeScript Ready** universal validation library for developers
 #### require / import
 
 ```javascript
-const Verifications = require('verifications');
+const Verifications = require('verifications').default;
 // or
 import Verifications from 'verifications';
 ```
@@ -96,5 +96,3 @@ var isCreditCardValid = Verifications
 - 46 active issuers are supported
 
 *****
-
-**for client side usage you're going to need json-loader or something...**
